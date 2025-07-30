@@ -1,12 +1,51 @@
-# React + Vite
+# 株式会社Surprise 求人サイト
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Inside Stories向けの求人サイトです。React + Viteで構築されています。
 
-Currently, two official plugins are available:
+## 技術スタック
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 19.1.0
+- Vite 7.0.4
+- Framer Motion（アニメーション）
+- React Markdown（マークダウン表示）
+- React Icons（アイコンライブラリ）
 
-## Expanding the ESLint configuration
+## セットアップ
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# 依存関係のインストール
+npm install
+
+# 開発サーバーの起動
+npm run dev
+
+# ビルド
+npm run build
+```
+
+## プロジェクト構造
+
+```
+src/
+├── assets/          # 画像ファイル
+├── components/      # Reactコンポーネント
+│   ├── Header.jsx
+│   ├── Hero.jsx
+│   ├── Content.jsx
+│   ├── Footer.jsx
+│   └── PositionCard.jsx
+├── data/           # コンテンツデータ
+│   └── content.js
+├── styles/         # CSSファイル
+│   └── main.css
+├── App.jsx         # メインアプリケーション
+└── main.jsx        # エントリーポイント
+```
+
+## 特徴
+
+- Inside Storiesのデザインを参考にした洗練されたUI
+- スムーズなスクロールアニメーション
+- レスポンシブデザイン対応
+- マークダウンコンテンツのサポート
+- アイコン付き募集要項セクション
