@@ -21,6 +21,9 @@ npm run dev
 
 # ビルド
 npm run build
+
+# GitHub Pagesにデプロイ（gh-pagesパッケージを使用）
+npm run deploy
 ```
 
 ## プロジェクト構造
@@ -49,3 +52,23 @@ src/
 - レスポンシブデザイン対応
 - マークダウンコンテンツのサポート
 - アイコン付き募集要項セクション
+
+## GitHub Pagesへのデプロイ
+
+### 方法1: GitHub Actionsを使用（推奨）
+1. コードをmainブランチにプッシュすると自動的にデプロイされます
+2. GitHub Actionsのワークフローが自動的にビルドとデプロイを実行します
+
+### 方法2: 手動デプロイ
+```bash
+# 依存関係をインストール（gh-pagesを含む）
+npm install
+
+# GitHub Pagesにデプロイ
+npm run deploy
+```
+
+### 注意事項
+- デプロイ先URL: https://[username].github.io/stories-recruit/
+- `vite.config.js`の`base`オプションがリポジトリ名と一致している必要があります
+- GitHub Pagesの設定で「Source」を「GitHub Actions」に設定してください

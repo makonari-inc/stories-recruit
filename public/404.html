@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // GitHub PagesのSPA対応用スクリプト
+      // URLパスを保持したまま、index.htmlにリダイレクト
+      const path = window.location.pathname.slice(1);
+      if (path && !path.startsWith('?')) {
+        window.location.replace(
+          window.location.origin + '/stories-recruit/?' + 
+          encodeURIComponent(path) +
+          window.location.search +
+          window.location.hash
+        );
+      }
+    </script>
+    <title>Loading...</title>
+  </head>
+  <body>
+  </body>
+</html>
