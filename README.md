@@ -1,6 +1,6 @@
 # 株式会社Surprise 求人サイト
 
-Inside Stories向けの求人サイトです。React + Viteで構築されています。
+Inside Stories向けの求人サイトです。React + Viteで構築されています!
 
 ## 技術スタック
 
