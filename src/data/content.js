@@ -60,7 +60,7 @@ export const recruitData = {
         link: "https://surpriselife.co/recruit/4qpeFD1UeutauLuzAlaE0G"
       },
       {
-        title: "AIプロンプトエンジニア（コンテンツ企画・ディレクター）",
+        title: "コンテンツ企画・ディレクター",
         description: "『本気AI』で配信する記事の制作ディレクターです。AIと共に試行錯誤を繰り返し、コンテンツを創造する、新しい時代のクリエイターを募集しています。",
         link: "https://surpriselife.co/recruit/LpnUVmidwIxY3pzaJ7vpY"
       }
